@@ -17,11 +17,11 @@ class PlacesModule(
             return
         }
 
-        // ✅ Check permission & request if needed
-        LocationPermissionHelper.requestLocationPermission(activity) {
-            // This block runs ONLY after permission is granted
 
-            // 🔹 Use mock nearby places
+        LocationPermissionHelper.requestLocationPermission(activity) {
+
+
+         
             val nearbyPlaces = listOf(
                 Place("Udyog Vihar II, Gurugram", 28.4971, 77.0825, 0.0),
                 Place("India Gate", 28.6129, 77.2295, 1.0),
@@ -42,7 +42,7 @@ class PlacesModule(
         }
     }
 
-    // 🔹 Simple data class for a place
+
     data class Place(
         val name: String,
         val latitude: Double,
